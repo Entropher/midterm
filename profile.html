@@ -8,20 +8,54 @@
   </head>
   <body>
     <div class="app">
-      <!-- Same sidebar as index.html -->
-      <aside class="sidebar">
+      <div class="app__top">
+        <!-- Same sidebar as index.html -->
+        <aside class="sidebar">
         <div class="sidebar__header">
-          <a href="index.html" class="logo">design.today</a>
-          <button type="button" class="sidebar__menu"></button>
+          <a href="index.html" class="logo"><strong>design.</strong>today</a>
+          <button type="button" class="sidebar__menu" aria-label="Menu">
+            <img src="src/images/Group 7.svg" alt="" />
+          </button>
         </div>
 
         <nav class="sidebar__nav">
           <ul>
-            <li><a href="index.html" class="is-active">Home</a></li>
-            <li><a href="#">Explore</a></li>
-            <li><a href="#">Folders</a></li>
-            <li><a href="#">Favourites</a></li>
-            <li><a href="#">Activities</a></li>
+            <li>
+              <a href="index.html" class="is-active">
+                <img src="src/images/Component 5 – 2.svg" alt="" width="22" height="22" />
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="src/images/Component 3 – 2.svg" alt="" width="22" height="22" />
+                Explore
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="src/images/Component 4 – 2.svg" alt="" width="22" height="22" />
+                Folders
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  class="sidebar__nav-icon--light"
+                  src="src/images/Component 6 – 2.svg"
+                  alt=""
+                  width="22"
+                  height="22"
+                />
+                Favourites
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="src/images/Component 1 – 2.svg" alt="" width="22" height="22" />
+                Activities
+              </a>
+            </li>
           </ul>
         </nav>
 
@@ -75,9 +109,17 @@
           </form>
           <div class="topbar__actions">
             <a href="#">GO PRO!</a>
-            <button type="button"></button>
-            <button type="button"></button>
-            <button type="button" class="topbar__avatar" aria-label="Profile"></button>
+            <button type="button" class="topbar__icon" aria-label="Notifications">
+              <img src="src/images/Component 11 – 2.svg" alt="" />
+              <span class="topbar__badge" aria-hidden="true"></span>
+            </button>
+            <button type="button" class="topbar__icon" aria-label="Messages">
+              <img src="src/images/Component 7 – 2.svg" alt="" />
+              <span class="topbar__badge" aria-hidden="true"></span>
+            </button>
+            <button type="button" class="topbar__avatar topbar__avatar--icon" aria-label="Profile">
+              <img src="src/images/Group 79.svg" alt="" />
+            </button>
             <button type="button" class="btn-upload">UPLOAD</button>
           </div>
         </header>
@@ -173,85 +215,86 @@
             </table>
           </section>
         </main>
-
-        <!-- Same footer as index.html -->
-        <footer class="footer">
-          <div class="footer__columns">
-            <div>
-              <h3>For designers</h3>
-              <ul>
-                <li><a href="#">Go Pro!</a></li>
-                <li><a href="#">Explore design work</a></li>
-                <li><a href="#">Design blog</a></li>
-                <li><a href="#">Overtime podcast</a></li>
-                <li><a href="#">Dribbble meetups</a></li>
-                <li><a href="#">Playoffs</a></li>
-                <li><a href="#">Weekly Warm-Up</a></li>
-                <li><a href="#">Code of conduct</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3>Hire designers</h3>
-              <ul>
-                <li><a href="#">Post a job opening</a></li>
-                <li><a href="#">Post a freelance project</a></li>
-                <li><a href="#">Search for designers</a></li>
-                <li><a href="#">Brands</a></li>
-                <li><a href="#">Advertise with us</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3>Company</h3>
-              <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Media kit</a></li>
-                <li><a href="#">Dribbble shop</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">API</a></li>
-                <li><a href="#">Terms of service</a></li>
-                <li><a href="#">Privacy policy</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3>Directories</h3>
-              <ul>
-                <li><a href="#">Top designers</a></li>
-                <li><a href="#">Top design teams</a></li>
-                <li><a href="#">Design jobs</a></li>
-                <li><a href="#">Tags</a></li>
-                <li><a href="#">Places</a></li>
-                <li><a href="#">Design assets</a></li>
-                <li><a href="#">Shop Creative Market</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer__bottom">
-            <ul class="social">
-              <li>
-                <a href="#"
-                  ><img src="src/images/Component 12 – 2.svg" alt=""
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img src="src/images/Component 13 – 2.svg" alt=""
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img src="src/images/Component 14 – 2.svg" alt=""
-                /></a>
-              </li>
-            </ul>
-            <p>For Smartacademy</p>
-          </div>
-        </footer>
+        </div>
       </div>
+
+      <!-- Same footer as index.html -->
+      <footer class="footer">
+        <div class="footer__columns">
+          <div>
+            <h3>For designers</h3>
+            <ul>
+              <li><a href="#">Go Pro!</a></li>
+              <li><a href="#">Explore design work</a></li>
+              <li><a href="#">Design blog</a></li>
+              <li><a href="#">Overtime podcast</a></li>
+              <li><a href="#">Dribbble meetups</a></li>
+              <li><a href="#">Playoffs</a></li>
+              <li><a href="#">Weekly Warm-Up</a></li>
+              <li><a href="#">Code of conduct</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Hire designers</h3>
+            <ul>
+              <li><a href="#">Post a job opening</a></li>
+              <li><a href="#">Post a freelance project</a></li>
+              <li><a href="#">Search for designers</a></li>
+              <li><a href="#">Brands</a></li>
+              <li><a href="#">Advertise with us</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Media kit</a></li>
+              <li><a href="#">Dribbble shop</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Directories</h3>
+            <ul>
+              <li><a href="#">Top designers</a></li>
+              <li><a href="#">Top design teams</a></li>
+              <li><a href="#">Design jobs</a></li>
+              <li><a href="#">Tags</a></li>
+              <li><a href="#">Places</a></li>
+              <li><a href="#">Design assets</a></li>
+              <li><a href="#">Shop Creative Market</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <ul class="social">
+            <li>
+              <a href="#"
+                ><img src="src/images/Component 12 – 2.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="src/images/Component 13 – 2.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="src/images/Component 14 – 2.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+          <p>For <strong>Smartacademy</strong></p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

@@ -8,294 +8,344 @@
   </head>
   <body>
     <div class="app">
-      <!-- Left sidebar -->
-      <aside class="sidebar">
-        <div class="sidebar__header">
-          <a href="index.html" class="logo">design.today</a>
-          <button type="button" class="sidebar__menu"></button>
+      <div class="app__top">
+        <!-- Left sidebar -->
+        <aside class="sidebar">
+          <div class="sidebar__header">
+            <a href="index.html" class="logo"><strong>design.</strong>today</a>
+            <button type="button" class="sidebar__menu" aria-label="Menu">
+              <img src="src/images/Group 7.svg" alt="" />
+            </button>
+          </div>
+
+          <nav class="sidebar__nav">
+            <ul>
+              <li>
+                <a href="index.html" class="is-active">
+                  <img src="src/images/Component 5 – 2.svg" alt="" width="22" height="22" />
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="src/images/Component 3 – 2.svg" alt="" width="22" height="22" />
+                  Explore
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="src/images/Component 4 – 2.svg" alt="" width="22" height="22" />
+                  Folders
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    class="sidebar__nav-icon--light"
+                    src="src/images/Component 6 – 2.svg"
+                    alt=""
+                    width="22"
+                    height="22"
+                  />
+                  Favourites
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="src/images/Component 1 – 2.svg" alt="" width="22" height="22" />
+                  Activities
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <section class="sidebar__following">
+            <h2>Following</h2>
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="src/images/Rectangle 67.png" alt="" /><span
+                    >Sajon</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="src/images/Rectangle 65.png" alt="" /><span
+                    >Tran Mau Tri Tam</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="src/images/Rectangle 70.png" alt="" /><span
+                    >Ghani Pradita</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="src/images/Rectangle 71.png" alt="" /><span
+                    >David Kovalev</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="src/images/Rectangle 68.png" alt="" /><span
+                    >Ryan Putnam</span
+                  ></a
+                >
+              </li>
+            </ul>
+            <button type="button">Load more (15)</button>
+          </section>
+        </aside>
+
+        <!-- Main column -->
+        <div class="main">
+          <header class="topbar">
+            <form class="search" role="search">
+              <input type="search" placeholder="Search inspiration" />
+            </form>
+            <div class="topbar__actions">
+              <a href="#">GO PRO!</a>
+              <button
+                type="button"
+                class="topbar__icon"
+                aria-label="Notifications"
+              >
+                <img src="src/images/Component 11 – 2.svg" alt="" />
+                <span class="topbar__badge" aria-hidden="true"></span>
+              </button>
+              <button type="button" class="topbar__icon" aria-label="Messages">
+                <img src="src/images/Component 7 – 2.svg" alt="" />
+                <span class="topbar__badge" aria-hidden="true"></span>
+              </button>
+              <a href="profile.html" class="topbar__avatar">
+                <img src="src/images/Group 33.png" alt="Profile" />
+              </a>
+              <button type="button" class="btn-upload">UPLOAD</button>
+            </div>
+          </header>
+
+          <main>
+            <!-- Category filters -->
+            <div class="filters">
+              <ul class="categories">
+                <li><button type="button" class="is-active">All</button></li>
+                <li><button type="button">Web design</button></li>
+                <li><button type="button">3D</button></li>
+                <li><button type="button">App design</button></li>
+                <li><button type="button">Animation</button></li>
+                <li><button type="button">Illustration</button></li>
+                <li><button type="button">Typography</button></li>
+              </ul>
+              <button type="button" class="filters__toggle">
+                <img src="src/images/Group 18.svg" alt="" />
+                Filters
+              </button>
+            </div>
+
+            <!-- Project gallery -->
+            <section class="gallery">
+              <article class="shot">
+                <a href="#"
+                  ><img src="src/images/Rectangle 45.png" alt="" /><span
+                    >UI Components for Unity Gaming</span
+                  ></a
+                >
+              </article>
+              <article class="shot">
+                <a href="#"
+                  ><img src="src/images/Rectangle 46.png" alt="" /><span
+                    >Analytics Mobile App – Blurr Series</span
+                  ></a
+                >
+              </article>
+              <article class="shot">
+                <a href="#"
+                  ><img src="src/images/Rectangle 47.png" alt="" /><span
+                    >Estaro – Dark-mode – Task Management App</span
+                  ></a
+                >
+              </article>
+              <article class="shot">
+                <a href="#"
+                  ><img src="src/images/Rectangle 48.png" alt="" /><span
+                    >Live streaming application for gamers.</span
+                  ></a
+                >
+              </article>
+              <article class="shot">
+                <a href="#"
+                  ><img src="src/images/Rectangle 45-1.png" alt="" /><span
+                    >Dark Mockup for Unity Gaming</span
+                  ></a
+                >
+              </article>
+              <article class="shot">
+                <a href="#"
+                  ><img src="src/images/Rectangle 46-1.png" alt="" /><span
+                    >SMM – Social Media Management – App UI</span
+                  ></a
+                >
+              </article>
+              <article class="shot">
+                <a href="#"
+                  ><img src="src/images/Rectangle 47-1.png" alt="" /><span
+                    >Food App 2.0</span
+                  ></a
+                >
+              </article>
+              <article class="shot">
+                <a href="#"
+                  ><img src="src/images/Rectangle 48-1.png" alt="" /><span
+                    >Live streaming application for gamers.</span
+                  ></a
+                >
+              </article>
+            </section>
+
+            <button type="button" class="load-more">Load more</button>
+          </main>
         </div>
-
-        <nav class="sidebar__nav">
-          <ul>
-            <li><a href="index.html" class="is-active">Home</a></li>
-            <li><a href="#">Explore</a></li>
-            <li><a href="#">Folders</a></li>
-            <li><a href="#">Favourites</a></li>
-            <li><a href="#">Activities</a></li>
-          </ul>
-        </nav>
-
-        <section class="sidebar__following">
-          <h2>Following</h2>
-          <ul>
-            <li>
-              <a href="#"
-                ><img src="src/images/Rectangle 67.png" alt="" /><span
-                  >Sajon</span
-                ></a
-              >
-            </li>
-            <li>
-              <a href="#"
-                ><img src="src/images/Rectangle 65.png" alt="" /><span
-                  >Tran Mau Tri Tam</span
-                ></a
-              >
-            </li>
-            <li>
-              <a href="#"
-                ><img src="src/images/Rectangle 70.png" alt="" /><span
-                  >Ghani Pradita</span
-                ></a
-              >
-            </li>
-            <li>
-              <a href="#"
-                ><img src="src/images/Rectangle 71.png" alt="" /><span
-                  >David Kovalev</span
-                ></a
-              >
-            </li>
-            <li>
-              <a href="#"
-                ><img src="src/images/Rectangle 68.png" alt="" /><span
-                  >Ryan Putnam</span
-                ></a
-              >
-            </li>
-          </ul>
-          <button type="button">Load more (15)</button>
-        </section>
-      </aside>
-
-      <!-- Main column -->
-      <div class="main">
-        <header class="topbar">
-          <form class="search" role="search">
-            <input type="search" placeholder="Search inspiration" />
-          </form>
-          <div class="topbar__actions">
-            <a href="#">GO PRO!</a>
-            <button type="button"></button>
-            <button type="button"></button>
-            <a href="profile.html"></a>
-            <button type="button" class="btn-upload">UPLOAD</button>
-          </div>
-        </header>
-
-        <main>
-          <!-- Category filters -->
-          <div class="filters">
-            <ul class="categories">
-              <li><button type="button" class="is-active">All</button></li>
-              <li><button type="button">Web design</button></li>
-              <li><button type="button">3D</button></li>
-              <li><button type="button">App design</button></li>
-              <li><button type="button">Animation</button></li>
-              <li><button type="button">Illustration</button></li>
-              <li><button type="button">Typography</button></li>
-            </ul>
-            <button type="button" class="filters__toggle">Filters</button>
-          </div>
-
-          <!-- Project gallery -->
-          <section class="gallery">
-            <article class="shot">
-              <a href="#"
-                ><img src="src/images/Rectangle 45.png" alt="" /><span
-                  >UI Components for Unity Gaming</span
-                ></a
-              >
-            </article>
-            <article class="shot">
-              <a href="#"
-                ><img src="src/images/Rectangle 46.png" alt="" /><span
-                  >Analytics Mobile App – Blurr Series</span
-                ></a
-              >
-            </article>
-            <article class="shot">
-              <a href="#"
-                ><img src="src/images/Rectangle 47.png" alt="" /><span
-                  >Estaro – Dark-mode – Task Management App</span
-                ></a
-              >
-            </article>
-            <article class="shot">
-              <a href="#"
-                ><img src="src/images/Rectangle 48.png" alt="" /><span
-                  >Live streaming application for gamers.</span
-                ></a
-              >
-            </article>
-            <article class="shot">
-              <a href="#"
-                ><img src="src/images/Rectangle 45-1.png" alt="" /><span
-                  >Dark Mockup for Unity Gaming</span
-                ></a
-              >
-            </article>
-            <article class="shot">
-              <a href="#"
-                ><img src="src/images/Rectangle 46-1.png" alt="" /><span
-                  >SMM – Social Media Management – App UI</span
-                ></a
-              >
-            </article>
-            <article class="shot">
-              <a href="#"
-                ><img src="src/images/Rectangle 47-1.png" alt="" /><span
-                  >Food App 2.0</span
-                ></a
-              >
-            </article>
-            <article class="shot">
-              <a href="#"
-                ><img src="src/images/Rectangle 48-1.png" alt="" /><span
-                  >Live streaming application for gamers.</span
-                ></a
-              >
-            </article>
-          </section>
-
-          <button type="button" class="load-more">Load more</button>
-
-          <!-- Top designers -->
-          <section class="top-designers">
-            <div class="top-designers__header">
-              <h2>Top Designers</h2>
-              <a href="#">View all</a>
-            </div>
-            <ul class="designer-list">
-              <li>
-                <img src="src/images/Rectangle 65.png" alt="" />
-                <p>Tran Mau Tri Tam</p>
-                <p>Sai Gon, Vietnam</p>
-                <button type="button">Following</button>
-              </li>
-              <li>
-                <img src="src/images/Rectangle 69.png" alt="" />
-                <p>Ghulam Rasool</p>
-                <p>Dubai</p>
-                <button type="button">Follow</button>
-              </li>
-              <li>
-                <img src="src/images/Rectangle 66.png" alt="" />
-                <p>Zhenya Rynzhuk</p>
-                <p>New York City, NY</p>
-                <button type="button">Follow</button>
-              </li>
-              <li>
-                <img src="src/images/Rectangle 70.png" alt="" />
-                <p>Ghani Pradita</p>
-                <p>Yogyakarta, Indonesia</p>
-                <button type="button">Follow</button>
-              </li>
-              <li>
-                <img src="src/images/Rectangle 67.png" alt="" />
-                <p>Sajon</p>
-                <p>Earth</p>
-                <button type="button">Following</button>
-              </li>
-              <li>
-                <img src="src/images/Rectangle 71.png" alt="" />
-                <p>David Kovalev</p>
-                <p>Sarasota, FL</p>
-                <button type="button">Follow</button>
-              </li>
-              <li>
-                <img src="src/images/Rectangle 68.png" alt="" />
-                <p>Ryan Putnam</p>
-                <p>Colorado Springs</p>
-                <button type="button">Follow</button>
-              </li>
-              <li>
-                <img src="src/images/Rectangle 72.png" alt="" />
-                <p>Dmitry Lauretsky</p>
-                <p>Omsk, Russia</p>
-                <button type="button">Follow</button>
-              </li>
-            </ul>
-          </section>
-        </main>
-
-        <footer class="footer">
-          <div class="footer__columns">
-            <div>
-              <h3>For designers</h3>
-              <ul>
-                <li><a href="#">Go Pro!</a></li>
-                <li><a href="#">Explore design work</a></li>
-                <li><a href="#">Design blog</a></li>
-                <li><a href="#">Overtime podcast</a></li>
-                <li><a href="#">Dribbble meetups</a></li>
-                <li><a href="#">Playoffs</a></li>
-                <li><a href="#">Weekly Warm-Up</a></li>
-                <li><a href="#">Code of conduct</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3>Hire designers</h3>
-              <ul>
-                <li><a href="#">Post a job opening</a></li>
-                <li><a href="#">Post a freelance project</a></li>
-                <li><a href="#">Search for designers</a></li>
-                <li><a href="#">Brands</a></li>
-                <li><a href="#">Advertise with us</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3>Company</h3>
-              <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Media kit</a></li>
-                <li><a href="#">Dribbble shop</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">API</a></li>
-                <li><a href="#">Terms of service</a></li>
-                <li><a href="#">Privacy policy</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3>Directories</h3>
-              <ul>
-                <li><a href="#">Top designers</a></li>
-                <li><a href="#">Top design teams</a></li>
-                <li><a href="#">Design jobs</a></li>
-                <li><a href="#">Tags</a></li>
-                <li><a href="#">Places</a></li>
-                <li><a href="#">Design assets</a></li>
-                <li><a href="#">Shop Creative Market</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer__bottom">
-            <ul class="social">
-              <li>
-                <a href="#"
-                  ><img src="src/images/Component 12 – 2.svg" alt=""
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img src="src/images/Component 13 – 2.svg" alt=""
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img src="src/images/Component 14 – 2.svg" alt=""
-                /></a>
-              </li>
-            </ul>
-            <p>For Smartacademy</p>
-          </div>
-        </footer>
       </div>
+
+      <!-- Top designers -->
+      <section class="top-designers">
+        <div class="top-designers__header">
+          <h2>Top Designers</h2>
+          <a href="#">View all</a>
+        </div>
+        <ul class="designer-list">
+          <li>
+            <img src="src/images/Rectangle 65.png" alt="" />
+            <p>Tran Mau Tri Tam</p>
+            <p>Sai Gon, Vietnam</p>
+            <button type="button">Following</button>
+          </li>
+          <li>
+            <img src="src/images/Rectangle 69.png" alt="" />
+            <p>Ghulam Rasool</p>
+            <p>Dubai</p>
+            <button type="button">Follow</button>
+          </li>
+          <li>
+            <img src="src/images/Rectangle 66.png" alt="" />
+            <p>Zhenya Rynzhuk</p>
+            <p>New York City, NY</p>
+            <button type="button">Follow</button>
+          </li>
+          <li>
+            <img src="src/images/Rectangle 70.png" alt="" />
+            <p>Ghani Pradita</p>
+            <p>Yogyakarta, Indonesia</p>
+            <button type="button">Follow</button>
+          </li>
+          <li>
+            <img src="src/images/Rectangle 67.png" alt="" />
+            <p>Sajon</p>
+            <p>Earth</p>
+            <button type="button">Following</button>
+          </li>
+          <li>
+            <img src="src/images/Rectangle 71.png" alt="" />
+            <p>David Kovalev</p>
+            <p>Sarasota, FL</p>
+            <button type="button">Follow</button>
+          </li>
+          <li>
+            <img src="src/images/Rectangle 68.png" alt="" />
+            <p>Ryan Putnam</p>
+            <p>Colorado Springs</p>
+            <button type="button">Follow</button>
+          </li>
+          <li>
+            <img src="src/images/Rectangle 72.png" alt="" />
+            <p>Dmitry Lauretsky</p>
+            <p>Omsk, Russia</p>
+            <button type="button">Follow</button>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__columns">
+          <div>
+            <h3>For designers</h3>
+            <ul>
+              <li><a href="#">Go Pro!</a></li>
+              <li><a href="#">Explore design work</a></li>
+              <li><a href="#">Design blog</a></li>
+              <li><a href="#">Overtime podcast</a></li>
+              <li><a href="#">Dribbble meetups</a></li>
+              <li><a href="#">Playoffs</a></li>
+              <li><a href="#">Weekly Warm-Up</a></li>
+              <li><a href="#">Code of conduct</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Hire designers</h3>
+            <ul>
+              <li><a href="#">Post a job opening</a></li>
+              <li><a href="#">Post a freelance project</a></li>
+              <li><a href="#">Search for designers</a></li>
+              <li><a href="#">Brands</a></li>
+              <li><a href="#">Advertise with us</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Media kit</a></li>
+              <li><a href="#">Dribbble shop</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Directories</h3>
+            <ul>
+              <li><a href="#">Top designers</a></li>
+              <li><a href="#">Top design teams</a></li>
+              <li><a href="#">Design jobs</a></li>
+              <li><a href="#">Tags</a></li>
+              <li><a href="#">Places</a></li>
+              <li><a href="#">Design assets</a></li>
+              <li><a href="#">Shop Creative Market</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <ul class="social">
+            <li>
+              <a href="#"
+                ><img src="src/images/Component 12 – 2.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="src/images/Component 13 – 2.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="src/images/Component 14 – 2.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+          <p>For <strong>Smartacademy</strong></p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
