@@ -4,44 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Midterm Project</title>
+
+    <meta
+      name="description"
+      content="Discover web design, UI, illustration, animation, and typography inspiration on design.today."
+    />
+    <meta
+      name="keywords"
+      content="design inspiration, web design, UI design, illustration, animation, typography"
+    />
+    <meta name="author" content="design.today" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="design.today" />
+    <meta property="og:title" content="design.today — Design Inspiration" />
+    <meta
+      property="og:description"
+      content="Discover web design, UI, illustration, animation, and typography inspiration on design.today."
+    />
+    <meta property="og:url" content="https://design.today/" />
+    <meta property="og:image" content="src/images/Rectangle 40.png" />
+    <meta property="og:locale" content="en_US" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="app">
-      <div class="app__top">
+      <div class="app_top">
         <!-- Left sidebar -->
         <aside class="sidebar">
-          <div class="sidebar__header">
+          <div class="sidebar_header">
             <a href="index.html" class="logo"><strong>design.</strong>today</a>
-            <button type="button" class="sidebar__menu" aria-label="Menu">
+            <button type="button" class="sidebar_menu">
               <img src="src/images/Group 7.svg" alt="" />
             </button>
           </div>
 
-          <nav class="sidebar__nav">
+          <nav class="sidebar_nav">
             <ul>
               <li>
-                <a href="index.html" class="is-active">
-                  <img src="src/images/Component 5 – 2.svg" alt="" width="22" height="22" />
+                <a href="index.html">
+                  <img
+                    src="src/images/Component 5 – 2.svg"
+                    alt=""
+                    width="22"
+                    height="22"
+                  />
                   Home
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="src/images/Component 3 – 2.svg" alt="" width="22" height="22" />
+                  <img
+                    src="src/images/Component 3 – 2.svg"
+                    alt=""
+                    width="22"
+                    height="22"
+                  />
                   Explore
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="src/images/Component 4 – 2.svg" alt="" width="22" height="22" />
+                  <img
+                    src="src/images/Component 4 – 2.svg"
+                    alt=""
+                    width="22"
+                    height="22"
+                  />
                   Folders
                 </a>
               </li>
               <li>
                 <a href="#">
                   <img
-                    class="sidebar__nav-icon--light"
+                    class="sidebar_nav-icon--light"
                     src="src/images/Component 6 – 2.svg"
                     alt=""
                     width="22"
@@ -52,14 +90,19 @@
               </li>
               <li>
                 <a href="#">
-                  <img src="src/images/Component 1 – 2.svg" alt="" width="22" height="22" />
+                  <img
+                    src="src/images/Component 1 – 2.svg"
+                    alt=""
+                    width="22"
+                    height="22"
+                  />
                   Activities
                 </a>
               </li>
             </ul>
           </nav>
 
-          <section class="sidebar__following">
+          <section class="sidebar_following">
             <h2>Following</h2>
             <ul>
               <li>
@@ -102,27 +145,23 @@
           </section>
         </aside>
 
-        <!-- Main column -->
+        <!-- Main content -->
         <div class="main">
           <header class="topbar">
             <form class="search" role="search">
               <input type="search" placeholder="Search inspiration" />
             </form>
-            <div class="topbar__actions">
+            <div class="topbar_actions">
               <a href="#">GO PRO!</a>
-              <button
-                type="button"
-                class="topbar__icon"
-                aria-label="Notifications"
-              >
+              <button type="button" class="topbar_icon">
                 <img src="src/images/Component 11 – 2.svg" alt="" />
-                <span class="topbar__badge" aria-hidden="true"></span>
+                <span class="topbar_badge"></span>
               </button>
-              <button type="button" class="topbar__icon" aria-label="Messages">
+              <button type="button" class="topbar_icon">
                 <img src="src/images/Component 7 – 2.svg" alt="" />
-                <span class="topbar__badge" aria-hidden="true"></span>
+                <span class="topbar_badge"></span>
               </button>
-              <a href="profile.html" class="topbar__avatar">
+              <a href="profile.html" class="topbar_avatar">
                 <img src="src/images/Group 33.png" alt="Profile" />
               </a>
               <button type="button" class="btn-upload">UPLOAD</button>
@@ -141,7 +180,7 @@
                 <li><button type="button">Illustration</button></li>
                 <li><button type="button">Typography</button></li>
               </ul>
-              <button type="button" class="filters__toggle">
+              <button type="button" class="filters_toggle">
                 <img src="src/images/Group 18.svg" alt="" />
                 Filters
               </button>
@@ -150,60 +189,100 @@
             <!-- Project gallery -->
             <section class="gallery">
               <article class="shot">
-                <a href="#"
-                  ><img src="src/images/Rectangle 45.png" alt="" /><span
-                    >UI Components for Unity Gaming</span
-                  ></a
-                >
+                <a href="#">
+                  <span class="shot_media">
+                    <img src="src/images/Rectangle 45.png" alt="" />
+                    <span class="shot_actions">
+                      <img src="src/images/Component 10 – 1.svg" alt="" />
+                      <img src="src/images/Component 6 – 2.svg" alt="" />
+                    </span>
+                  </span>
+                  <span>UI Components for Unity Gaming</span>
+                </a>
               </article>
               <article class="shot">
-                <a href="#"
-                  ><img src="src/images/Rectangle 46.png" alt="" /><span
-                    >Analytics Mobile App – Blurr Series</span
-                  ></a
-                >
+                <a href="#">
+                  <span class="shot_media">
+                    <img src="src/images/Rectangle 46.png" alt="" />
+                    <span class="shot_actions">
+                      <img src="src/images/Component 10 – 1.svg" alt="" />
+                      <img src="src/images/Component 6 – 2.svg" alt="" />
+                    </span>
+                  </span>
+                  <span>Analytics Mobile App – Blurr Series</span>
+                </a>
               </article>
               <article class="shot">
-                <a href="#"
-                  ><img src="src/images/Rectangle 47.png" alt="" /><span
-                    >Estaro – Dark-mode – Task Management App</span
-                  ></a
-                >
+                <a href="#">
+                  <span class="shot_media">
+                    <img src="src/images/Rectangle 47.png" alt="" />
+                    <span class="shot_actions">
+                      <img src="src/images/Component 10 – 1.svg" alt="" />
+                      <img src="src/images/Component 6 – 2.svg" alt="" />
+                    </span>
+                  </span>
+                  <span>Estaro – Dark-mode – Task Management App</span>
+                </a>
               </article>
               <article class="shot">
-                <a href="#"
-                  ><img src="src/images/Rectangle 48.png" alt="" /><span
-                    >Live streaming application for gamers.</span
-                  ></a
-                >
+                <a href="#">
+                  <span class="shot_media">
+                    <img src="src/images/Rectangle 48.png" alt="" />
+                    <span class="shot_actions">
+                      <img src="src/images/Component 10 – 1.svg" alt="" />
+                      <img src="src/images/Component 6 – 2.svg" alt="" />
+                    </span>
+                  </span>
+                  <span>Live streaming application for gamers.</span>
+                </a>
               </article>
               <article class="shot">
-                <a href="#"
-                  ><img src="src/images/Rectangle 45-1.png" alt="" /><span
-                    >Dark Mockup for Unity Gaming</span
-                  ></a
-                >
+                <a href="#">
+                  <span class="shot_media">
+                    <img src="src/images/Rectangle 45-1.png" alt="" />
+                    <span class="shot_actions">
+                      <img src="src/images/Component 10 – 1.svg" alt="" />
+                      <img src="src/images/Component 6 – 2.svg" alt="" />
+                    </span>
+                  </span>
+                  <span>Dark Mockup for Unity Gaming</span>
+                </a>
               </article>
               <article class="shot">
-                <a href="#"
-                  ><img src="src/images/Rectangle 46-1.png" alt="" /><span
-                    >SMM – Social Media Management – App UI</span
-                  ></a
-                >
+                <a href="#">
+                  <span class="shot_media">
+                    <img src="src/images/Rectangle 46-1.png" alt="" />
+                    <span class="shot_actions">
+                      <img src="src/images/Component 10 – 1.svg" alt="" />
+                      <img src="src/images/Component 6 – 2.svg" alt="" />
+                    </span>
+                  </span>
+                  <span>SMM – Social Media Management – App UI</span>
+                </a>
               </article>
               <article class="shot">
-                <a href="#"
-                  ><img src="src/images/Rectangle 47-1.png" alt="" /><span
-                    >Food App 2.0</span
-                  ></a
-                >
+                <a href="#">
+                  <span class="shot_media">
+                    <img src="src/images/Rectangle 47-1.png" alt="" />
+                    <span class="shot_actions">
+                      <img src="src/images/Component 10 – 1.svg" alt="" />
+                      <img src="src/images/Component 6 – 2.svg" alt="" />
+                    </span>
+                  </span>
+                  <span>Food App 2.0</span>
+                </a>
               </article>
               <article class="shot">
-                <a href="#"
-                  ><img src="src/images/Rectangle 48-1.png" alt="" /><span
-                    >Live streaming application for gamers.</span
-                  ></a
-                >
+                <a href="#">
+                  <span class="shot_media">
+                    <img src="src/images/Rectangle 48-1.png" alt="" />
+                    <span class="shot_actions">
+                      <img src="src/images/Component 10 – 1.svg" alt="" />
+                      <img src="src/images/Component 6 – 2.svg" alt="" />
+                    </span>
+                  </span>
+                  <span>Live streaming application for gamers.</span>
+                </a>
               </article>
             </section>
 
@@ -214,7 +293,7 @@
 
       <!-- Top designers -->
       <section class="top-designers">
-        <div class="top-designers__header">
+        <div class="top-designers_header">
           <h2>Top Designers</h2>
           <a href="#">View all</a>
         </div>
@@ -270,8 +349,9 @@
         </ul>
       </section>
 
+      <!-- Footer -->
       <footer class="footer">
-        <div class="footer__columns">
+        <div class="footer_columns">
           <div>
             <h3>For designers</h3>
             <ul>
@@ -325,7 +405,8 @@
             </ul>
           </div>
         </div>
-        <div class="footer__bottom">
+
+        <div class="footer_bottom">
           <ul class="social">
             <li>
               <a href="#"

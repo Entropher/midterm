@@ -3,224 +3,268 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile Page</title>
+    <title>Profile page</title>
+
+    <meta
+      name="description"
+      content="View some kind of smartphone transactions profile page on design.today."
+    />
+    <meta
+      name="keywords"
+      content="designer profile, portfolio, design.today, smartphone, iphone, transactions"
+    />
+    <meta name="author" content="design.today" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="design.today" />
+    <meta property="og:title" content="Profile — design.today" />
+    <meta
+      property="og:description"
+      content="View some kind of smartphone transactions profile page on design.today."
+    />
+    <meta property="og:url" content="https://design.today/profile.html" />
+    <meta property="og:image" content="src/images/Group 33.png" />
+    <meta property="og:locale" content="en_US" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="app">
-      <div class="app__top">
+      <div class="app_top">
         <!-- Same sidebar as index.html -->
         <aside class="sidebar">
-        <div class="sidebar__header">
-          <a href="index.html" class="logo"><strong>design.</strong>today</a>
-          <button type="button" class="sidebar__menu" aria-label="Menu">
-            <img src="src/images/Group 7.svg" alt="" />
-          </button>
-        </div>
-
-        <nav class="sidebar__nav">
-          <ul>
-            <li>
-              <a href="index.html" class="is-active">
-                <img src="src/images/Component 5 – 2.svg" alt="" width="22" height="22" />
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="src/images/Component 3 – 2.svg" alt="" width="22" height="22" />
-                Explore
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="src/images/Component 4 – 2.svg" alt="" width="22" height="22" />
-                Folders
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  class="sidebar__nav-icon--light"
-                  src="src/images/Component 6 – 2.svg"
-                  alt=""
-                  width="22"
-                  height="22"
-                />
-                Favourites
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="src/images/Component 1 – 2.svg" alt="" width="22" height="22" />
-                Activities
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-        <section class="sidebar__following">
-          <h2>Following</h2>
-          <ul>
-            <li>
-              <a href="#"
-                ><img src="src/images/Rectangle 67.png" alt="" /><span
-                  >Sajon</span
-                ></a
-              >
-            </li>
-            <li>
-              <a href="#"
-                ><img src="src/images/Rectangle 65.png" alt="" /><span
-                  >Tran Mau Tri Tam</span
-                ></a
-              >
-            </li>
-            <li>
-              <a href="#"
-                ><img src="src/images/Rectangle 70.png" alt="" /><span
-                  >Ghani Pradita</span
-                ></a
-              >
-            </li>
-            <li>
-              <a href="#"
-                ><img src="src/images/Rectangle 71.png" alt="" /><span
-                  >David Kovalev</span
-                ></a
-              >
-            </li>
-            <li>
-              <a href="#"
-                ><img src="src/images/Rectangle 68.png" alt="" /><span
-                  >Ryan Putnam</span
-                ></a
-              >
-            </li>
-          </ul>
-          <button type="button">Load more (15)</button>
-        </section>
-      </aside>
-
-      <div class="main">
-        <header class="topbar">
-          <form class="search" role="search">
-            <input type="search" placeholder="Search inspiration" />
-          </form>
-          <div class="topbar__actions">
-            <a href="#">GO PRO!</a>
-            <button type="button" class="topbar__icon" aria-label="Notifications">
-              <img src="src/images/Component 11 – 2.svg" alt="" />
-              <span class="topbar__badge" aria-hidden="true"></span>
+          <div class="sidebar_header">
+            <a href="index.html" class="logo"><strong>design.</strong>today</a>
+            <button type="button" class="sidebar_menu">
+              <img src="src/images/Group 7.svg" alt="" />
             </button>
-            <button type="button" class="topbar__icon" aria-label="Messages">
-              <img src="src/images/Component 7 – 2.svg" alt="" />
-              <span class="topbar__badge" aria-hidden="true"></span>
-            </button>
-            <button type="button" class="topbar__avatar topbar__avatar--icon" aria-label="Profile">
-              <img src="src/images/Group 79.svg" alt="" />
-            </button>
-            <button type="button" class="btn-upload">UPLOAD</button>
           </div>
-        </header>
 
-        <main>
-          <!-- Order history -->
-          <section class="orders">
-            <table class="orders-table">
-              <thead>
-                <tr>
-                  <th>Date</th>
-                  <th>Order ID</th>
-                  <th>Name</th>
-                  <th>Price</th>
-                  <th>Quantity</th>
-                  <th>Total</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>2020-09-29 95:57</td>
-                  <td>200398</td>
-                  <td>iPhone X 64Gb Grey</td>
-                  <td>$ 999.00</td>
-                  <td>1</td>
-                  <td>$ 999.00</td>
-                </tr>
-                <tr>
-                  <td>2020-09-29 95:57</td>
-                  <td>200398</td>
-                  <td>iPhone X 64Gb Grey</td>
-                  <td>$ 999.00</td>
-                  <td>1</td>
-                  <td>$ 999.00</td>
-                </tr>
-                <tr>
-                  <td>2020-09-29 95:57</td>
-                  <td>200398</td>
-                  <td>iPhone X 64Gb Grey</td>
-                  <td>$ 999.00</td>
-                  <td>1</td>
-                  <td>$ 999.00</td>
-                </tr>
-                <tr>
-                  <td>2020-09-29 95:57</td>
-                  <td>200398</td>
-                  <td>iPhone X 64Gb Grey</td>
-                  <td>$ 999.00</td>
-                  <td>1</td>
-                  <td>$ 999.00</td>
-                </tr>
-                <tr>
-                  <td>2020-09-29 95:57</td>
-                  <td>200398</td>
-                  <td>iPhone X 64Gb Grey</td>
-                  <td>$ 999.00</td>
-                  <td>1</td>
-                  <td>$ 999.00</td>
-                </tr>
-                <tr>
-                  <td>2020-09-29 95:57</td>
-                  <td>200398</td>
-                  <td>iPhone X 64Gb Grey</td>
-                  <td>$ 999.00</td>
-                  <td>1</td>
-                  <td>$ 999.00</td>
-                </tr>
-                <tr class="is-accent">
-                  <td>2020-09-29 95:57</td>
-                  <td>200398</td>
-                  <td>iPhone X 64Gb Grey</td>
-                  <td>$ 999.00</td>
-                  <td>1</td>
-                  <td>$ 999.00</td>
-                </tr>
-                <tr>
-                  <td>2020-09-29 95:57</td>
-                  <td>200398</td>
-                  <td>iPhone X 64Gb Grey</td>
-                  <td>$ 999.00</td>
-                  <td>1</td>
-                  <td>$ 999.00</td>
-                </tr>
-                <tr>
-                  <td>2020-09-29 95:57</td>
-                  <td>200398</td>
-                  <td>iPhone X 64Gb Grey</td>
-                  <td>$ 999.00</td>
-                  <td>1</td>
-                  <td>$ 999.00</td>
-                </tr>
-              </tbody>
-            </table>
+          <nav class="sidebar_nav">
+            <ul>
+              <li>
+                <a href="index.html">
+                  <img
+                    src="src/images/Component 5 – 2.svg"
+                    alt=""
+                    width="22"
+                    height="22"
+                  />
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="src/images/Component 3 – 2.svg"
+                    alt=""
+                    width="22"
+                    height="22"
+                  />
+                  Explore
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="src/images/Component 4 – 2.svg"
+                    alt=""
+                    width="22"
+                    height="22"
+                  />
+                  Folders
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    class="sidebar_nav-icon--light"
+                    src="src/images/Component 6 – 2.svg"
+                    alt=""
+                    width="22"
+                    height="22"
+                  />
+                  Favourites
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="src/images/Component 1 – 2.svg"
+                    alt=""
+                    width="22"
+                    height="22"
+                  />
+                  Activities
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <section class="sidebar_following">
+            <h2>Following</h2>
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="src/images/Rectangle 67.png" alt="" /><span
+                    >Sajon</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="src/images/Rectangle 65.png" alt="" /><span
+                    >Tran Mau Tri Tam</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="src/images/Rectangle 70.png" alt="" /><span
+                    >Ghani Pradita</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="src/images/Rectangle 71.png" alt="" /><span
+                    >David Kovalev</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="src/images/Rectangle 68.png" alt="" /><span
+                    >Ryan Putnam</span
+                  ></a
+                >
+              </li>
+            </ul>
+            <button type="button">Load more (15)</button>
           </section>
-        </main>
+        </aside>
+
+        <!-- Main content -->
+        <div class="main">
+          <header class="topbar">
+            <form class="search" role="search">
+              <input type="search" placeholder="Search inspiration" />
+            </form>
+            <div class="topbar_actions">
+              <a href="#">GO PRO!</a>
+              <button type="button" class="topbar_icon">
+                <img src="src/images/Component 11 – 2.svg" alt="" />
+                <span class="topbar_badge"></span>
+              </button>
+              <button type="button" class="topbar_icon">
+                <img src="src/images/Component 7 – 2.svg" alt="" />
+                <span class="topbar_badge"></span>
+              </button>
+              <a href="index.html" class="topbar_avatar topbar_avatar--icon">
+                <img src="src/images/Group 79.svg" alt="Profile" />
+              </a>
+              <button type="button" class="btn-upload">UPLOAD</button>
+            </div>
+          </header>
+
+          <main>
+            <!-- Order history -->
+            <section class="orders">
+              <table class="orders-table">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Order ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2020-09-29 95:57</td>
+                    <td>200398</td>
+                    <td>iPhone X 64Gb Grey</td>
+                    <td>$ 999.00</td>
+                    <td>1</td>
+                    <td>$ 999.00</td>
+                  </tr>
+                  <tr>
+                    <td>2020-09-29 95:57</td>
+                    <td>200398</td>
+                    <td>iPhone X 64Gb Grey</td>
+                    <td>$ 999.00</td>
+                    <td>1</td>
+                    <td>$ 999.00</td>
+                  </tr>
+                  <tr>
+                    <td>2020-09-29 95:57</td>
+                    <td>200398</td>
+                    <td>iPhone X 64Gb Grey</td>
+                    <td>$ 999.00</td>
+                    <td>1</td>
+                    <td>$ 999.00</td>
+                  </tr>
+                  <tr>
+                    <td>2020-09-29 95:57</td>
+                    <td>200398</td>
+                    <td>iPhone X 64Gb Grey</td>
+                    <td>$ 999.00</td>
+                    <td>1</td>
+                    <td>$ 999.00</td>
+                  </tr>
+                  <tr>
+                    <td>2020-09-29 95:57</td>
+                    <td>200398</td>
+                    <td>iPhone X 64Gb Grey</td>
+                    <td>$ 999.00</td>
+                    <td>1</td>
+                    <td>$ 999.00</td>
+                  </tr>
+                  <tr>
+                    <td>2020-09-29 95:57</td>
+                    <td>200398</td>
+                    <td>iPhone X 64Gb Grey</td>
+                    <td>$ 999.00</td>
+                    <td>1</td>
+                    <td>$ 999.00</td>
+                  </tr>
+                  <tr class="is-accent">
+                    <td>2020-09-29 95:57</td>
+                    <td>200398</td>
+                    <td>iPhone X 64Gb Grey</td>
+                    <td>$ 999.00</td>
+                    <td>1</td>
+                    <td>$ 999.00</td>
+                  </tr>
+                  <tr>
+                    <td>2020-09-29 95:57</td>
+                    <td>200398</td>
+                    <td>iPhone X 64Gb Grey</td>
+                    <td>$ 999.00</td>
+                    <td>1</td>
+                    <td>$ 999.00</td>
+                  </tr>
+                  <tr>
+                    <td>2020-09-29 95:57</td>
+                    <td>200398</td>
+                    <td>iPhone X 64Gb Grey</td>
+                    <td>$ 999.00</td>
+                    <td>1</td>
+                    <td>$ 999.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </main>
         </div>
       </div>
 
       <!-- Same footer as index.html -->
       <footer class="footer">
-        <div class="footer__columns">
+        <div class="footer_columns">
           <div>
             <h3>For designers</h3>
             <ul>
@@ -274,7 +318,8 @@
             </ul>
           </div>
         </div>
-        <div class="footer__bottom">
+
+        <div class="footer_bottom">
           <ul class="social">
             <li>
               <a href="#"
