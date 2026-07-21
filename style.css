@@ -572,9 +572,10 @@ img {
 
 .designer-list {
   display: flex;
-  gap: 8px;
+  gap: 12px;
   overflow-x: auto;
   scrollbar-width: none;
+  padding-bottom: 4px;
 }
 
 .designer-list::-webkit-scrollbar {
@@ -582,8 +583,8 @@ img {
 }
 
 .designer-list li {
-  flex: 1 1 0;
-  min-width: 0;
+  flex: 1 0 112px;
+  min-width: 112px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -619,7 +620,7 @@ img {
 
 .designer-list button {
   height: 34px;
-  padding: 0 20px;
+  padding: 0 14px;
   margin-top: auto;
   border-radius: var(--radius-pill);
   border: 1px solid #e0e0e0;
@@ -627,6 +628,7 @@ img {
   color: var(--text);
   font-size: 0.75rem;
   font-weight: 500;
+  white-space: nowrap;
   transition:
     background 0.15s ease,
     border-color 0.15s ease;
