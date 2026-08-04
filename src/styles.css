@@ -633,6 +633,7 @@ img {
 /* ========== Orders table ========== */
 .orders {
   padding: 24px 0 84px;
+  overflow-x: auto;
 }
 
 .orders-table {
@@ -893,10 +894,6 @@ img {
     flex-direction: column;
     gap: 16px;
     align-items: flex-start;
-  }
-
-  .orders {
-    overflow-x: auto;
   }
 
   .orders-table {
